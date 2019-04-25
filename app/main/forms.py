@@ -24,7 +24,7 @@ class EditForm(Form):
 
 class CommentForm(Form):
     content = PageDownField('', validators=[DataRequired()])
-    submit = SubmitField(_l('Comment'))
+    submit = SubmitField(_l('Submit'))
 
 
 class ExportForm(Form):
