@@ -27,7 +27,7 @@
 
         <div class="block-container">
             {% if not user_profile.photo %}
-                <p><img src="{{ url_for('static', filename='image/photo/default.jpg') }}"></p>
+                <p><img src="{{ url_for('static', filename='default.jpg') }}"></p>
             {% else %}
                 {% set photo = 'image/photo/' + user_profile.photo %}
                 <p><img src="{{ url_for('static', filename=photo) }}"></p>

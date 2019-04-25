@@ -283,6 +283,13 @@ def delete(postid):
     db.session.query(Post).filter(Post.id == postid).delete()
     db.session.commit()
 
+    post_tags = PostTag.query.join(PostTagRelationship, PostTagRelationship.post_tag_id == PostTag.id).filter(
+        PostTagRelationship.post_id == postid).all()
+    for post_tag in post_tags:
+        post_tag.count -= 1
+        db.session.add(post_tag)
+    db.session.commit()
+
     comments = Comment.query.filter(Comment.post_id == postid).all()
     for comment in comments:
         db.session.query(Comment).filter(Comment.id == comment.id).delete()        
@@ -725,7 +732,6 @@ def account():
 def edit_profile():
 
     user_profile = UserProfile.query.filter_by(user_id=current_user.id).first()
-    print(user_profile)
 
     form = ProfileForm()
 
