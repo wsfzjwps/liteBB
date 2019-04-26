@@ -33,7 +33,7 @@ class ProductionConfig(Config):
 class DevelopmentConfig(Config):
 
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'litebb.sqlite')
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(basedir, 'litebb_dev.sqlite')
 
 config = {
     'production': ProductionConfig,

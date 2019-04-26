@@ -286,6 +286,8 @@ def delete(postid):
     post_tags = PostTag.query.join(PostTagRelationship, PostTagRelationship.post_tag_id == PostTag.id).filter(
         PostTagRelationship.post_id == postid).all()
     for post_tag in post_tags:
+        post_tag_relationship = PostTagRelationship.query.filter(PostTagRelationship.post_id == postid, PostTagRelationship.post_tag_id == post_tag.id).first()
+        db.session.delete(post_tag_relationship)
         post_tag.count -= 1
         db.session.add(post_tag)
     db.session.commit()
