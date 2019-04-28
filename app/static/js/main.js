@@ -21,7 +21,7 @@ function moderate(obj, comment_id){
                 $(obj).html(result_0)
             }
             else if(callback === '1'){
-                var result_1 = '<span class="glyphicon glyphicon-ok" style="color: #25b864;" aria-hidden="true"></span>';
+                var result_1 = '<span class="glyphicon glyphicon-ok" style="color: #00a99d;" aria-hidden="true"></span>';
                 $(obj).html(result_1)
             }
             else{

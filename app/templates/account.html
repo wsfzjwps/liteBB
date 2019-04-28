@@ -19,7 +19,7 @@
         </div>
 
         <div class="block-container" style="margin-top: 10px;  background-color: #ffffff; line-height: 44px;">
-            <p style="color: #333333; font-weight: bold; border-bottom: solid 1px #eeeeee;">{{ _('Account info') }}</p>
+            <p style="color: #34495e; font-weight: bold; border-bottom: solid 1px #eeeeee;">{{ _('Account info') }}</p>
             {{ _('Username:') }}  <b>{{ current_user.user_name }}</b>&nbsp;&nbsp;&nbsp;<a href="{{ url_for('main.change_username') }}">{{ _('Change') }}</a>
             <hr class="hr-line">
             <span>{{ _('Password:') }}</span>&nbsp;&nbsp;<a href="{{ url_for('auth.change_password') }}">{{ _('Change') }}</a>
@@ -29,7 +29,7 @@
         </div>
 
         <div class="block-container" style="line-height: 36px; background-color: #ffffff; margin-top: 10px;">
-            <p style="color: #333333; font-weight: bold; border-bottom: solid 1px #eeeeee; line-height: 44px;">{{ _('Profile') }}</p>
+            <p style="color: #34495e; font-weight: bold; border-bottom: solid 1px #eeeeee; line-height: 44px;">{{ _('Profile') }}</p>
 
             <div style="margin-top: 20px; background-color: #ffffff; line-height: 24px;">
                 {% if not photo %}
@@ -47,7 +47,7 @@
         </div>
 
         <div class="block-container" style="margin-top: 10px; line-height: 36px; background-color: #ffffff;">
-            <p style="color: #333333; font-weight: bold; border-bottom: solid 1px #eeeeee; line-height: 44px;">{{ _('Export posts') }}</p>
+            <p style="color: #34495e; font-weight: bold; border-bottom: solid 1px #eeeeee; line-height: 44px;">{{ _('Export posts') }}</p>
 
             <span>{{ _('Export posts in HTML or Markdown format.') }}</span>
             {% if current_user.last_export %}

@@ -1,15 +1,18 @@
 body {
     background:#f1f1f1;
-    color:#333333;
+    color:#34495e;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, "Microsoft YaHei", Simsun, "STHeiti STXihei", "Microsoft JhengHei";
 }
 
-a:focus, a:hover, a:active {
+a { color: #00a99d; }
+
+a:hover, a:active, a:focus {
+    color: #00a99d;
     text-decoration:none;
 }
 
 p {
-    margin: 0 0 15px;
+    margin: 15px 0;
 }
 
 img {
@@ -184,13 +187,13 @@ textarea.form-control {
 }
 
 .nav-tab-active {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
-    border-bottom: 2px solid #337ab7;
+    border-bottom: 2px solid #00a99d;
 }
 
 .nav-tab-inactive {
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
     color: #888888;
 }
@@ -319,38 +322,43 @@ div.flask-pagedown-preview {
 
 div.flask-pagedown-preview li,
 div.flask-pagedown-preview p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 div.flask-pagedown-preview h1 {
-    font-size: 150%;
+    font-size: 160%;
+    padding-top: 16px;
     font-weight: bold;
-    margin: 22px auto;
+    margin: 28px auto;
     line-height: 32px;
 }
 
 div.flask-pagedown-preview h2 {
     font-size: 140%;
+    padding-top: 14px;
     font-weight: bold;
-    margin: 20px auto;
+    margin: 22px auto;
     line-height: 30px;
 }
 
 div.flask-pagedown-preview h3 {
-    font-size: 130%;
+    font-size: 120%;
+    padding-top: 12px;
     font-weight: bold;
     margin: 18px auto;
     line-height: 28px;
 }
 
 div.flask-pagedown-preview h4 {
-    font-size: 16px;
+    padding-top: 10px;
+    font-size: 15px;
     font-weight: bold;
     margin: 15px auto;
-    line-height: 26px;
+    line-height: 24px;
 }
 
 div.flask-pagedown-preview h5 {
+    padding-top: 10px;
     font-size: 14px;
     font-weight: bold;
     margin: 15px auto;
@@ -358,6 +366,7 @@ div.flask-pagedown-preview h5 {
 }
 
 div.flask-pagedown-preview h6 {
+    padding-top: 10px;
     font-size: 12px;
     font-weight: normal;
     margin: 15px auto;
@@ -373,38 +382,43 @@ div.flask-pagedown-preview h6 {
 
 .post-body li,
 .post-body p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .post-body h1 {
-    font-size: 150%;
+    font-size: 160%;
+    padding-top: 16px;
     font-weight: bold;
-    margin: 22px auto;
+    margin: 28px auto;
     line-height: 32px;
 }
 
 .post-body h2 {
     font-size: 140%;
+    padding-top: 14px;
     font-weight: bold;
-    margin: 20px auto;
+    margin: 22px auto;
     line-height: 30px;
 }
 
 .post-body h3 {
-    font-size: 130%;
+    font-size: 120%;
+    padding-top: 12px;
     font-weight: bold;
     margin: 18px auto;
     line-height: 28px;
 }
 
 .post-body h4 {
-    font-size: 16px;
+    padding-top: 10px;
+    font-size: 15px;
     font-weight: bold;
     margin: 15px auto;
-    line-height: 26px;
+    line-height: 24px;
 }
 
 .post-body h5 {
+    padding-top: 10px;
     font-size: 14px;
     font-weight: bold;
     margin: 15px auto;
@@ -412,6 +426,7 @@ div.flask-pagedown-preview h6 {
 }
 
 .post-body h6 {
+    padding-top: 10px;
     font-size: 12px;
     font-weight: normal;
     margin: 15px auto;
@@ -427,7 +442,7 @@ div.flask-pagedown-preview h6 {
 
 .summary-body li,
 .summary-body p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .summary-body h1,
@@ -436,7 +451,7 @@ div.flask-pagedown-preview h6 {
 .summary-body h4,
 .summary-body h5,
 .summary-body h6 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     margin: 15px auto;
 }
@@ -456,29 +471,29 @@ div.flask-pagedown-preview h6 {
 }
 
 .btn-default-x {
-    color: #333333;
+    color: #34495e;
     background-color: #ffffff;
     border-color: #dddddd;
     padding: 5px 12px;
 }
 
-.btn-default-x:hover {
-    color: #333333;
+.btn-default-x:hover, .btn-default-x:active, .btn-default-x:focus {
+    color: #34495e;
     background-color: #eeeeee;
     border-color: #cccccc;
 }
 
 .btn-primary-x {
-    color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7;
+    color: #ffffff;
+    background-color: #00a99d;
+    border-color: #00a99d;
     padding: 5px 12px;
 }
 
-.btn-primary-x:hover {
+.btn-primary-x:hover, .btn-primary-x:active, .btn-primary-x:focus {
     color: #ffffff;
-    background-color: #286090;
-    border-color: #286090;
+    background-color: #00a99d;
+    border-color: #00a99d;
 }
 
 .pull-left-chevron {
@@ -487,7 +502,7 @@ div.flask-pagedown-preview h6 {
 }
 
 .pagination>li>a, .pagination>li>span {
-    color: #337ab7;
+    color: #00a99d;
 }
 
 ul.comments {
@@ -535,7 +550,7 @@ div.comment-username {
 
 .comment-body li,
 .comment-body p {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .comment-body h1,
@@ -544,7 +559,7 @@ div.comment-username {
 .comment-body h4,
 .comment-body h5,
 .comment-body h6 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
     margin: 15px auto;
 }

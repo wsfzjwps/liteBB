@@ -20,7 +20,7 @@
         <p class="sub-menu"><a href="{{ url_for('main.photos') }}"><img class="menu-icon" src="{{ url_for('static', filename='icons/camera.svg') }}">{{ _('Photo Album') }}</a></p>
         <p class="sub-menu"><a href="{{ url_for('main.about') }}"><img class="menu-icon" src="{{ url_for('static', filename='icons/info.svg') }}">{{ _('About me') }}</a></p>
         {% if current_user.is_authenticated %}
-            <p class="sub-menu"><a style="color: #dd0000;" href="{{ url_for('admin.comments') }}"><img class="menu-icon" src="{{ url_for('static', filename='icons/message.svg') }}">{{ _('Comments') }}</a></p>
+            <p class="sub-menu"><a style="color: #00a99d;" href="{{ url_for('admin.comments') }}"><img class="menu-icon" src="{{ url_for('static', filename='icons/message.svg') }}">{{ _('Comments') }}</a></p>
         {% endif %}
 
         {% if g.language == 'en-US' %}
