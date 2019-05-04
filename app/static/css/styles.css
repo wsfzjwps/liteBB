@@ -60,11 +60,7 @@ blockquote {
 }
 
 ul > li {
-    list-style: square;
-}
-
-ol ol, ol ul, ul ol, ul ul {
-    margin-bottom: 15px;
+    list-style: disc;
 }
 
 .navbar {

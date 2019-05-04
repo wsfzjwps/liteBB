@@ -23,7 +23,7 @@ html5lib==1.0.1
 idna==2.6
 itsdangerous==0.24
 Jinja2==2.10
-kombu==4.2.1
+kombu==4.1.0
 Mako==1.0.9
 Markdown==3.0.1
 MarkupSafe==1.1.1
